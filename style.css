@@ -5,9 +5,8 @@ body, html {
   box-sizing: border-box;
   width: 100vw;
   word-wrap: break-word;
-  font-family: 'Baloo Bhaina 2', sans-serif;
   font-family: 'Noto Sans', sans-serif;
-  font-family: 'Reenie Beanie', cursive;
+  color: #0C0920;
 }
 
 a {
@@ -17,11 +16,30 @@ a {
 
 /* header */
 
+h1 {
+  font-family: 'Reenie Beanie', cursive;
+}
 
+.navbar {
+  background: #609A7D;
+}
+
+h1,
+.nav-link {
+  color: #F3F3F7;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+  color: #BDB9B3;
+}
 
 /* main */ 
 
-
+h2 {
+  font-family: 'Baloo Bhaina 2', sans-serif;
+  font-weight: 700  ;
+}
 
 /* form */
 
@@ -111,3 +129,23 @@ textarea {
 
 /* footer */
 
+.footer {
+  background: #BDB9B3;
+}
+
+ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+.footer,
+.footer ul > li > a {
+  color: #F3F3F7;
+}
+
+.footer ul {
+  list-style-type: none;
+}
+
+.footer ul > li > a:hover {
+  text-decoration: underline;
+}
