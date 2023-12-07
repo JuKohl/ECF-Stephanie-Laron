@@ -3,7 +3,6 @@ body, html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  width: 100vw;
   word-wrap: break-word;
   font-family: 'Noto Sans', sans-serif;
   color: #0C0920;
@@ -38,18 +37,60 @@ h1,
 
 h2 {
   font-family: 'Baloo Bhaina 2', sans-serif;
-  font-weight: 700  ;
+  font-weight: 700;
 }
 
-/* form */
+h3,
+h2 {
+  text-align: center;
+  margin: 1rem;
+}
+
+.main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom right, #609A7D 0%, #F3F3F7 25%, #F3F3F7 75%, #609A7D);
+}
+
+section {
+  padding: 1rem;
+}
+
+#about, 
+#services {
+  max-width: 800px;
+  margin: 2rem;
+}
+
+.container-fluid {
+  display: flex;
+}
+
+.image-container {
+  margin: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.about-image, 
+.services-image {
+  max-width: 200px;
+  bottom: 0;
+  right: 0;
+
+}/* form */
 
 #form, 
 label {
   text-align: center;
-  color: #989898;
+  color: #BDB9B3;
 }
 
 #form {
+  margin: auto;
   margin-bottom: 1rem;
 }
 
@@ -66,7 +107,7 @@ sup {
 
 #informations, 
 #message {
-  border: #989898 solid 1.5px;
+  border: #BDB9B3 solid 1.5px;
   border-radius: 5px;
   position: inherit;
   width: auto;
@@ -75,11 +116,16 @@ sup {
 fieldset > legend {
   float: none;
   width: auto;
+  color: #609A7D;
+}
+
+.h2Form {
+  color: #609A7D;
 }
 
 input, 
 textarea {
-  border: #989898 solid 1px;
+  border: #BDB9B3 solid 1px;
   border-radius: 5px;
   padding: 0.5rem;
 }
@@ -102,17 +148,17 @@ textarea {
   color: white;
   border: 10px;
   font-weight: bold;
-  border: solid 1px #989898;
+  border: solid 1px #BDB9B3;
   margin-bottom: 0.5rem;
 }
 
 .btnSend {
-  background-color: #989898;
+  background-color: #609A7D;
 }
 
 .btnSend:hover {
   background: white;
-  color: #989898;
+  color: #609A7D;
   transition-duration: 0.5s;
 }
 
@@ -131,6 +177,7 @@ textarea {
 
 .footer {
   background: #BDB9B3;
+  padding: 5px;
 }
 
 ul {
